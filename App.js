@@ -1,13 +1,13 @@
-import React from 'react';
-import Navigation from './app/navigations/Navigation';
+import React, {useState, useEffect} from 'react';
+import AppContainer from './app/index';
 import { View, Text, StyleSheet } from 'react-native';
+import { firebaseApp } from './app/utils/Firebase';
+import Login from './app/screens/Account/Login';
 
-const normalUser = true;
 
 export default function App() {
-    return (
-      <Navigation/>
-    );
+
+    return <AppContainer />
 }
 
 const styles = StyleSheet.create({
