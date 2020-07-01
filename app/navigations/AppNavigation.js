@@ -21,21 +21,10 @@ const NavigationStacks = createBottomTabNavigator({
                     size={22}
                     color={tintColor}
                 />
-            )
-        })
-    },
-    Search:{
-        screen: SearchScreenStacks,
-        navigationOptions: () => ({
-            tabBarLabel: "Buscar",
-            tabBarIcon: ({tintColor}) => (
-                <Icon
-                type="font-awesome"
-                name="search"
-                size={22}
-                color={tintColor}
-            />
-            )
+            ),
+            tabBarOptions: {
+                activeTintColor: '#42a5f5',
+            },
         })
     },
     Schedule:{
@@ -49,7 +38,27 @@ const NavigationStacks = createBottomTabNavigator({
                 size={22}
                 color={tintColor}
             />
-            )
+            ),
+            tabBarOptions: {
+                activeTintColor: '#42a5f5',
+            },
+        })
+    },
+    Search:{
+        screen: SearchScreenStacks,
+        navigationOptions: () => ({
+            tabBarLabel: "Notificaciones",
+            tabBarIcon: ({tintColor}) => (
+                <Icon
+                type="font-awesome"
+                name="bell"
+                size={22}
+                color={tintColor}
+            />
+            ),
+            tabBarOptions: {
+                activeTintColor: '#42a5f5',
+            },
         })
     },
     Account:{
@@ -63,7 +72,10 @@ const NavigationStacks = createBottomTabNavigator({
                     size={22}
                     color={tintColor}
                 />
-            )
+            ),
+            tabBarOptions: {
+                activeTintColor: '#42a5f5',
+            },
         })
     }
 });

@@ -9,14 +9,14 @@ export default function Search() {
         return (
 
             <View>
-                <Text>Soy un usuario y este es el buscador</Text>
+                <Text>Notificaciones</Text>
             </View>
         );
 
     } else {
         return(
             <View>
-            <Text>Soy un medico y este es el buscador</Text>
+            <Text>Notificaciones</Text>
         </View>
         )
 

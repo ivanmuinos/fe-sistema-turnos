@@ -4,6 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { firebaseApp } from './app/utils/Firebase';
 import Login from './app/screens/Account/Login';
 
+console.disableYellowBox = true;
 
 export default function App() {
 
